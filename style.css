@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "Plain Light";
+    color: rgb(255, 255, 255);
+    background-color: #0b0b0b;
+    
+    
+}
+
+
+
+
+#loder{
+    position: fixed;
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+    background-color:#0b0b0b;
+    padding: 25vh 10vw;
+}
+.line{
+    /* background-color: red; */
+    /* line-height: fit-content; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:2vw 
+}
+
+#line-num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2vw
+}
+
+#line-num #grow {
+    /* background-color: red; */
+    width: 5vw;
+    text-align: right;
+}
+
+ #line-num h5 , #line-num h6{
+    font-family: "silk serif";
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+.line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.line h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    animation-duration: 2s;
+    animation-delay: 0.05s;
+    animation-iteration-count: infinite;
+}
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 400;
+        opacity: 1;
+    }
+    48%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 400;
+        opacity: 0;
+    }
+    50%{
+        font-family: 'silkserif';
+        -webkit-text-stroke: 1px #fff; 
+        font-weight: 400;
+        color: transparent;
+        opacity: 1;
+
+    }
+    100%{
+        font-family: 'silkserif';
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 400;
+        color: transparent;
+        opacity: 0;
+    }
+    
+}    
+    
+
+#wait{
+    /* background-color: red; */
+    margin-top: 1.6vh;
+    text-align: center;
+    font-size: 1vw;
+}
+
+
+
+
+
+
+
+
+
+#main{
+    position: relative;
+    background-color: black;
+    
+}
+
+
+
+
+#page1{
+    position: relative;
+    background-color:#151515 ;
+    height: 100vh;
+    width: 100%;
+}

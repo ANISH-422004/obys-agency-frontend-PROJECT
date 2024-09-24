@@ -16,7 +16,17 @@ html,body{
 
 
 
-
+#crsr{
+    height:2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: rgb(151, 150, 150) 1px solid;
+    /* background-color: white; */
+    position: fixed;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
+    
+}
 #loder{
     position: fixed;
     z-index: 999;
@@ -64,7 +74,7 @@ html,body{
     font-size: 5vw;
     text-transform: uppercase;
     animation-duration: 2s;
-    animation-delay: 0.05s;
+    animation-delay: 0.02s;
     animation-iteration-count: infinite;
 }
 @keyframes anime {
@@ -130,4 +140,55 @@ html,body{
     background-color:#151515 ;
     height: 100vh;
     width: 100%;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.3vw;
+}
+#page1 #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:2vw ;
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+
+.hero{
+    /* background-color: rgb(47, 69, 61); */
+    width: 72%;
+    margin-left: 27%;
+    overflow: hidden;
+    
+
+}
+#hero-3{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+#hero-3 h2{
+    font-size:7vw ;
+    text-transform: uppercase;
+    line-height: 7vw;
+}
+
+.hero:nth-child(2){
+    margin-top: 18vh;
+}
+.hero h1{ 
+    
+    font-size:7vw ;
+    text-transform: uppercase;
+    line-height: 7vw;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-weight: 500;
+    
 }

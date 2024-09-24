@@ -50,7 +50,7 @@ function loderanimation(){
     tl.to("#loder",{
         opacity: 0,
         duration: 0.5,
-        delay: 2.9,
+        delay: 0,  // afeter work make it 2.9
         onComplete: function() {
                 document.getElementById("loder").style.display = 'none'; // Hide the loader completely
     }
@@ -61,12 +61,35 @@ function loderanimation(){
         duration:1,
     
     })
+
+    tl.from("#hero-1 h1,#hero-2 h1,#hero-3 h2,#hero-4 h1",{
+        y:150,
+        stagger:0.2,
+    })
     
-        
+    tl.from("#nav",{
+       opacity:0,
+    })
+    
     
     
     
     
 }
-
 loderanimation()
+
+function cursorAnimation(){
+
+    document.addEventListener("mousemove",function(dets){
+        gsap.to("#crsr",{
+           x:dets.x,
+           y:dets.y,
+           // delay:0.001,
+        })
+   })
+   
+   
+   Shery.makeMagnet("#nav-part2 h4", {});
+   
+}
+cursorAnimation()

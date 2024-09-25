@@ -49,7 +49,7 @@ function loderanimation(){
     })
     tl.to("#loder",{
         opacity: 0,
-        duration: 0.5,
+        duration: 0, // after work make it o.5
         delay: 0,  // afeter work make it 2.9
         onComplete: function() {
                 document.getElementById("loder").style.display = 'none'; // Hide the loader completely
@@ -65,6 +65,7 @@ function loderanimation(){
     tl.from("#hero-1 h1,#hero-2 h1,#hero-3 h2,#hero-4 h1",{
         y:150,
         stagger:0.2,
+        lazy: false
     })
     
     tl.from("#nav",{
@@ -93,3 +94,5 @@ function cursorAnimation(){
    
 }
 cursorAnimation()
+
+

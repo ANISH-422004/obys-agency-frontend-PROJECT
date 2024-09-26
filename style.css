@@ -9,7 +9,7 @@ html,body{
     width: 100%;
     font-family: "Plain Light";
     color: rgb(255, 255, 255);
-    background-color:#151515;    
+    /* background-color:#151515;     */
 }
 
 
@@ -126,7 +126,7 @@ html,body{
 
 #main{
     position: relative;
-    background-color:#151515 ;
+    background-color:#000000 ;
     
 }
 
@@ -212,6 +212,7 @@ html,body{
 #page2{
     height: 100vh;
     width: 100%;
+    background-color: #151515;
 }
 
 #vid-cont{
@@ -263,7 +264,7 @@ html,body{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: #2b2929;
+    background-color: #2f2c2c;
     position: relative;
 }
 
@@ -278,6 +279,7 @@ html,body{
     background-color:#151515;
     position: relative;
     padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 #page4-cont{
     width: 72vw;

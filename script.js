@@ -49,8 +49,8 @@ function loderanimation(){
     })
     tl.to("#loder",{
         opacity: 0,
-        duration: 0, // after work make it o.5
-        delay: 0,  // afeter work make it 2.9
+        duration: 0.5, // after work make it o.5
+        delay: 2.9,  // afeter work make it 2.9
         onComplete: function() {
                 document.getElementById("loder").style.display = 'none'; // Hide the loader completely
     }

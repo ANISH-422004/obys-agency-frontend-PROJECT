@@ -9,9 +9,7 @@ html,body{
     width: 100%;
     font-family: "Plain Light";
     color: rgb(255, 255, 255);
-    background-color:#151515;
-    
-    
+    background-color:#151515;    
 }
 
 
@@ -165,6 +163,7 @@ html,body{
     
 
 }
+
 #hero-3{
     display: flex;
     align-items: center;
@@ -181,13 +180,26 @@ html,body{
 .hero:nth-child(2){
     margin-top: 18vh;
 }
+
 .hero h1{ 
     
     font-size:7vw ;
     text-transform: uppercase;
     line-height: 7vw;
+    /* position: relative; */
 
 }
+
+#hero-1::before{
+    content: "01";
+    position: absolute;  
+    font-family: "silk serif";
+    font-size: 4vw;
+    font-weight: 300;
+    top: 28vh;
+    left: 19vw;
+}
+
 
 .hero h2:hover{
     -webkit-text-stroke: 1px white;
@@ -277,6 +289,16 @@ html,body{
 #page4-cont h1{
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
+}
+#page4-cont h1::before{
+    content: "03";
+    position: absolute;
+    font-family: "silk serif";
+    font-size: 4vw;
+    font-weight: 300;
+    top: 1vw;
+    left: -10vw;
 }
 
 #page4-cont #under-line{
@@ -338,4 +360,117 @@ html,body{
     background-color: #151515;
     min-height: 100vh;
     width: 100%;
+}
+
+.elem{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+.elem2{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+.elem h1{
+    font-size:7vw ;
+    -webkit-text-stroke: 1px white;
+    font-weight:400 ;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right:1.2vw ;
+    animation: anime2 25s linear 0.1s infinite ;
+    margin-bottom: 0vw;
+
+}
+.elem2 h1{
+    font-size:7vw ;
+    -webkit-text-stroke: 1px white;
+    font-weight:400 ;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right:1.2vw ;
+    animation: anime2reverse 20s linear 0.1s infinite ;
+    
+    margin-bottom: 0vw;
+}
+.elem span ,.elem2 span{
+    font-style: italic  ;
+    font-family: "silk serif";
+}
+
+@keyframes anime2 {
+     form{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(calc(-100% - 1.2vw));  /* ye jhatka ko band karne ke liye */
+    }
+}
+
+@keyframes anime2reverse {
+    from{
+        transform: translateX(calc(-100% - 1.2vw));
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+
+#footer{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    /* background-color: #ff6011; */
+    padding-right: 2vw;
+    padding-left: 28vw;
+}
+
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-family: "silk serif";
+    font-size: 4vw;
+    font-weight: 300;
+    top: 1vw;
+    left: -10vw;
+}
+
+#footer h1{
+    font-size: 8vw;
+    /* background-color: #3f7df4; */
+    /* margin-left: 30vw; */
+    width: 60vw;
+    text-transform: uppercase;
+    position: relative;
+
+}
+.underline{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin: 2vw 0;
+}
+
+#footer-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15vw;
+    padding-top:4vw ;
+    margin-bottom: 5vw;
+
+}
+
+#footer-div h6{
+    font-size: 0.9vw;
+}
+#footer-div h5{
+    font-size: 1.4vw;
+    margin: 0.2vh 0;
+    font-weight: 500;
 }

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 @font-face {
     font-family:"Plain Light" ;
@@ -20,7 +27,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html,body{
@@ -51,7 +59,9 @@ html,body{
     /* background-color: white; */
     position: fixed;
     z-index: 9999;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     
 }
 
@@ -67,16 +77,28 @@ html,body{
     /* background-color: red; */
     /* line-height: fit-content; */
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     gap:2vw 
 }
 
 #line-num{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap:2vw
 }
 
@@ -101,9 +123,44 @@ html,body{
 .line h2{
     font-size: 5vw;
     text-transform: uppercase;
-    animation-duration: 2s;
-    animation-delay: 0.02s;
-    animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 0.02s;
+            animation-delay: 0.02s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes anime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 400;
+        opacity: 1;
+    }
+    48%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 400;
+        opacity: 0;
+    }
+    50%{
+        font-family: 'silkserif';
+        -webkit-text-stroke: 1px #fff; 
+        font-weight: 400;
+        color: transparent;
+        opacity: 1;
+
+    }
+    100%{
+        font-family: 'silkserif';
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 400;
+        color: transparent;
+        opacity: 0;
+    }
+    
 }
 @keyframes anime {
     0%{
@@ -183,15 +240,27 @@ html,body{
 }
 
 #page1 #nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 2.3vw 5.3vw;
 }
 #page1 #nav-part2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap:2vw ;
     font-size: 0.9vw;
     font-weight: 500;
@@ -207,8 +276,12 @@ html,body{
 }
 
 #hero-3{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* justify-content: center; */
 }
 #hero-3 h2{
@@ -247,6 +320,8 @@ html,body{
     -webkit-text-stroke: 1px white;
     color: transparent;
     font-weight: 500;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
     
 }
@@ -292,16 +367,23 @@ html,body{
     left: 70%;
     z-index: 998;
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 4vw;
 }
 
 #vid-cont video{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     opacity: 0;
 }
 
@@ -352,13 +434,21 @@ html,body{
     /* background-color: red; */
     padding: 1vw 1vw;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .img-div{
-    flex-shrink:0;
+    -ms-flex-negative:0;
+        flex-shrink:0;
     height: 38vw;
     width: 28vw;
     /* background-color: blueviolet; */
@@ -369,7 +459,8 @@ html,body{
     
 }
 .img-div:nth-child(2){
-    flex-shrink:0;
+    -ms-flex-negative:0;
+        flex-shrink:0;
     height: 42vw;
     width: 30vw;
    
@@ -377,7 +468,8 @@ html,body{
     
 }
 .img-div:nth-child(4){
-    flex-shrink:0;
+    -ms-flex-negative:0;
+        flex-shrink:0;
     height: 42vw;
     width: 30vw;
    
@@ -387,8 +479,10 @@ html,body{
 .img-div img{
    height: 100%;
    width: 100%;
-   object-fit:cover;
-   object-position: center;
+   -o-object-fit:cover;
+      object-fit:cover;
+   -o-object-position: center;
+      object-position: center;
 }
 
 .page3-circle{
@@ -396,9 +490,15 @@ html,body{
     width: 23vw;
     border: 2px solid white;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content:center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
     position: relative;
 }
 
@@ -416,7 +516,9 @@ html,body{
     
 }
 #circle2 svg{
-    transform: rotate(-48deg);
+    -webkit-transform: rotate(-48deg);
+        -ms-transform: rotate(-48deg);
+            transform: rotate(-48deg);
 
 }
 .circle-in{
@@ -427,13 +529,23 @@ html,body{
     left: 0;
     background-color: #fff;
     color: #0b0b0b;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 50%;
     scale: 0;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
     transition: all ease 0.4s;
-    transition-delay: 0.08s;
+    -webkit-transition-delay: 0.08s;
+         -o-transition-delay: 0.08s;
+            transition-delay: 0.08s;
 
 }
 .circle-in>p{
@@ -443,8 +555,12 @@ html,body{
     /* background-color: #3f7df4; */
     text-align: center;
     scale: 0;
+    -webkit-transition:  0.4s;
+    -o-transition:  0.4s;
     transition:  0.4s;
-    transition-delay: 0.4s
+    -webkit-transition-delay: 0.4s;
+         -o-transition-delay: 0.4s;
+            transition-delay: 0.4s
 }
 .page3-circle:hover .circle-in{
     scale: 1;  
@@ -509,6 +625,8 @@ html,body{
 
 }
 #page4-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
@@ -541,10 +659,14 @@ html,body{
     
 }
 .blue-children{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* background-color: aquamarine;  */
     padding: 2vw 0;    
-    justify-content: space-between;
+    -webkit-box-pack: justify;    
+        -ms-flex-pack: justify;    
+            justify-content: space-between;
     border-bottom: #fff 1px solid;
 }
 
@@ -586,7 +708,8 @@ html,body{
     text-transform: uppercase;
     display: inline-block;
     margin-right:1.2vw ;
-    animation: anime2 25s linear 0.1s infinite ;
+    -webkit-animation: anime2 25s linear 0.1s infinite ;
+            animation: anime2 25s linear 0.1s infinite ;
     margin-bottom: 0vw;
 
 }
@@ -598,7 +721,8 @@ html,body{
     text-transform: uppercase;
     display: inline-block;
     margin-right:1.2vw ;
-    animation: anime2reverse 20s linear 0.1s infinite ;
+    -webkit-animation: anime2reverse 20s linear 0.1s infinite ;
+            animation: anime2reverse 20s linear 0.1s infinite ;
     
     margin-bottom: 0vw;
 }
@@ -607,21 +731,47 @@ html,body{
     font-family: "silk serif";
 }
 
-@keyframes anime2 {
+@-webkit-keyframes anime2 {
      form{
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
     to{
-        transform: translateX(calc(-100% - 1.2vw));  /* ye jhatka ko band karne ke liye */
+        -webkit-transform: translateX(calc(-100% - 1.2vw));
+                transform: translateX(calc(-100% - 1.2vw));  /* ye jhatka ko band karne ke liye */
+    }
+}
+
+@keyframes anime2 {
+     form{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+    to{
+        -webkit-transform: translateX(calc(-100% - 1.2vw));
+                transform: translateX(calc(-100% - 1.2vw));  /* ye jhatka ko band karne ke liye */
+    }
+}
+
+@-webkit-keyframes anime2reverse {
+    from{
+        -webkit-transform: translateX(calc(-100% - 1.2vw));
+                transform: translateX(calc(-100% - 1.2vw));
+    }
+    to{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
 }
 
 @keyframes anime2reverse {
     from{
-        transform: translateX(calc(-100% - 1.2vw));
+        -webkit-transform: translateX(calc(-100% - 1.2vw));
+                transform: translateX(calc(-100% - 1.2vw));
     }
     to{
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
 }
 
@@ -673,9 +823,15 @@ html,body{
 }
 
 #footer-div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 15vw;
     padding-top:4vw ;
     margin-bottom: 5vw;
@@ -705,7 +861,9 @@ html,body{
     position: absolute;
     top:0;
     left: 0;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     opacity: 0;
 
 }

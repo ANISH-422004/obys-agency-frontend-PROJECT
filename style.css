@@ -126,7 +126,7 @@ html,body{
 
 #main{
     position: relative;
-    background-color:#000000 ;
+    background-color:#151515;
     
 }
 
@@ -217,7 +217,7 @@ html,body{
 
 #vid-cont{
     height: 66vh;
-    width: 71vw;
+    width: 70vw;
     position: relative;
     left: 28%;
     /* background-color: aqua; */
@@ -427,7 +427,7 @@ html,body{
     height: 80vh;
     width: 100%;
     position: relative;
-    /* background-color: #ff6011; */
+    background-color:#151515;
     padding-right: 2vw;
     padding-left: 28vw;
 }
@@ -444,7 +444,7 @@ html,body{
 
 #footer h1{
     font-size: 8vw;
-    /* background-color: #3f7df4; */
+    /* background-color:#151515; */
     /* margin-left: 30vw; */
     width: 60vw;
     text-transform: uppercase;

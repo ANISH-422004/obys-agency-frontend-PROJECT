@@ -1,3 +1,22 @@
+
+@font-face {
+    font-family:"Plain Light" ;
+    src: url(./assets/plain-light-webfont.ttf);
+}
+
+@font-face {
+    font-family: "Plain Light";
+    src: url(./assets/plain-regular-webfont.ttf);
+}
+@font-face {
+    font-family: "silk serif";
+    src: url(./assets/silkserif-regularitalic-webfont.ttf);
+}
+@font-face {
+    font-family: "silk serif";
+    src: url(./assets/silkserif-lightitalic-webfont.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -160,6 +179,7 @@ html,body{
     background-color:#151515 ;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 #page1 #nav{
@@ -678,4 +698,18 @@ html,body{
 ._canvas_container{
     z-index: 998 !important;
     pointer-events: none;
+}
+
+#flag{
+    height: 25vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+
+}
+#hero-3{
+    z-index: 999;
+    position: relative;
 }

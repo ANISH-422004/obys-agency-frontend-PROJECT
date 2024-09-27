@@ -126,7 +126,7 @@ html,body{
 
 #main{
     position: relative;
-    background-color:#151515;
+    background-color:#151515 ;
     
 }
 
@@ -264,9 +264,55 @@ html,body{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: #2f2c2c;
+    background-color:#151515;
+    position: relative;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    width: 72vw;
+    margin-left: 27vw;
+}
+#page3 h1::before{
+    content: "02";
+    position: absolute;
+    font-family: "silk serif";
+    font-size: 4vw;
+    font-weight: 300;
+    top: 1vw;
+    left: -10vw;
+}
+#page3 #under-line{
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin: 5vw 0 ;
+    width: 72vw;
+    margin-left: 27vw;
+}
+#img-div-container{
+    background-color: red;
+    padding: 1vw;
     position: relative;
 }
+.img-div{
+    height: 33vw;
+    width: 24vw;
+    background-color: blueviolet;
+    position: relative;
+    overflow: hidden;
+}
+.img-div img{
+   height: 100%;
+   width: 100%;
+   object-fit:cover;
+   object-position: center;
+}
+
+
 
 
 

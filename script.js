@@ -109,3 +109,58 @@ function SheryAnimation(){
 loderanimation()
 cursorAnimation()
 SheryAnimation()
+
+var videoContainer = document.querySelector("#vid-cont");
+var video = document.querySelector("#vid-cont video")
+var vidcrsr =document.querySelector("#vid-crsr")
+
+
+var flag = 0
+videoContainer.addEventListener("click",function(){
+    if(flag===0){
+        video.play()
+        video.style.opacity=1
+        vidcrsr.innerHTML='<i class="ri-pause-line"></i>'
+        gsap.to("#vid-crsr",{
+        scale:0.4,
+        })
+        flag=1
+    
+    }else{
+        video.pause()
+        video.style.opacity=1
+        vidcrsr.innerHTML='<i class="ri-play-fill"></i>'
+        gsap.to("#vid-crsr",{
+        scale:1,
+    })
+    flag=0
+    }
+
+   
+})
+
+
+videoContainer.addEventListener("mouseenter", function() {
+  videoContainer.addEventListener("mousemove", function(dets) {
+    gsap.to("#crsr", {
+      opacity:0,
+    });
+
+    gsap.to("#vid-crsr", {
+      left: dets.x - 570,
+      y: dets.y - 300
+    });
+
+  });
+});
+
+videoContainer.addEventListener("mouseleave", function() {
+  gsap.to("#crsr", {
+    opacity:1,
+  });
+
+  gsap.to("#vid-crsr", {
+    left: "70%",
+    top: "-15%"
+  });
+});

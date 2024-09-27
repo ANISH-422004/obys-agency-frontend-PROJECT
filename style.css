@@ -255,7 +255,10 @@ html,body{
     width: 70vw;
     position: relative;
     left: 28%;
-    /* background-color: aqua; */
+    /* background-color: #3f7df4; */
+    background-image:url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+    background-position: center;
+    background-size: cover;
     
 
 }
@@ -274,22 +277,14 @@ html,body{
     justify-content: center;
     font-size: 4vw;
 }
-#vid-cont img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    
-}
-
 
 #vid-cont video{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+    opacity: 0;
 }
+
 
 
 
